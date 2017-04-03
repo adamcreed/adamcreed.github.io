@@ -48,7 +48,7 @@ header img {
 }
 
 h1 {
-  margin-top: 4vh;
+  display: inline;
 }
 
 a {
