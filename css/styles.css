@@ -128,9 +128,10 @@ hr {
       z-index: 100;
     }
 
-    body:not(header) {
+    body {
       padding: 3em;
     }
+
     .main {
       display: -webkit-flex; /* Safari */
       -webkit-flex-direction: column;
@@ -147,5 +148,9 @@ hr {
       margin: 0;
       margin-bottom: 10vh;
       max-width: 100vh;
+    }
+
+    *, *:after, *:before {
+      box-sizing: inherit;
     }
 }
