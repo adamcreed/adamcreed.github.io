@@ -148,8 +148,4 @@ hr {
       margin-bottom: 10vh;
       max-width: 100vh;
     }
-
-    *, *:after, *:before {
-      box-sizing: inherit;
-    }
 }
