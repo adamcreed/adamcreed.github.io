@@ -1,0 +1,115 @@
+html {
+  color: #222;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 200%;
+  margin-top: -20%;
+}
+
+.main {
+  padding: 20%;
+}
+
+.main ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.main ul ul {
+  margin: 0 0 20px 10px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.main ul.unlock {
+  list-style-type: circle;
+  list-style-position: inside;
+  background: #000 !important;
+  color: #000 !important;
+}
+
+.main ul.unlock:hover {
+  color: #FFF !important;
+}
+
+
+body {
+  font-family: Georgia, serif;
+  text-align: left;
+  max-width: 75em;
+  padding: 4em;
+}
+
+nav {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px;
+  border-style: solid;
+  background-color: #eef;
+  z-index: 100;
+}
+
+nav li {
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a.unlock {
+  color: inherit;
+}
+
+.main p {
+  margin-bottom: 50px;
+}
+
+article {
+  margin: 50px;
+  padding: 0.1em;
+  max-width: 45%;
+}
+
+article p {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 688px) {
+    nav {
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      top: inherit;
+      bottom: 0;
+      border-left: none;
+      border-top: 1px;
+      border-style: solid;
+      background-color: #eef;
+      z-index: 100;
+    }
+
+    body {
+      padding: 3em;
+    }
+
+    nav li {
+      display: inline;
+    }
+
+    article {
+      margin: 0;
+      margin-bottom: 10vh;
+      max-width: 100vh;
+    }
+}
