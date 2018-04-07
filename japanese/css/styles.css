@@ -87,13 +87,13 @@ article p {
 
 @media only screen and (max-width: 688px) {
     nav {
-      width: 100%;
+      width: 120%;
+      height: 5%;
+      margin-left: -4em;
       text-align: center;
       position: fixed;
-      top: inherit;
-      bottom: 0;
-      border-left: none;
-      border-top: 1px;
+      top: 0;
+      border-bottom: 1px;
       border-style: solid;
       background-color: #eef;
       z-index: 100;
@@ -101,6 +101,10 @@ article p {
 
     body {
       padding: 3em;
+    }
+
+    nav img {
+      display: none;
     }
 
     nav li {
