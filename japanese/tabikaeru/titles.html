@@ -6,22 +6,37 @@
 		<link rel="stylesheet" href="../../css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="../css/styles.css" type="text/css" />
 
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  					integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  					crossorigin="anonymous"></script>
+
+		<script src="../js/nav.js" charset="utf-8"></script>
+
 		<title>Tabi Kaeru Translations</title>
 	</head>
 
 	<body>
-    <nav>
-      <img src="kaeru.gif" alt="Tabi Kaeru">
-      <ul>
-        <li>Contents</li>
-        <li><a href="changelog.html">Changelog</a></li>
-        <li><a href="titles.html">Titles</a></li>
-      </ul>
-    </nav>
+		<div class="nav">
+			<div class="mobile menu-btn">&#9776;</div>
+			<div class="responsive-menu">
+				<img src="kaeru.gif" alt="Tabi Kaeru">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="changelog.html">Changelog</a></li>
+					<li class="active"><a href="titles.html">Titles</a></li>
+					<li><a href="friends.html">Friends</a></li>
+					<li><a href="shop.html">Shop Items</a></li>
+				</ul>
+			</div>
+		</div>
+
 		<div class="main">
       <h2>Titles</h2>
       <hr>
-      <p>Hover over the spoiler bar after each title to show unlock condition. Unlock information from <a href="https://h1g.jp/tabikaeru/?%E7%A7%B0%E5%8F%B7">h1g.jp</a></p>
+      <p class="description"><span class="desktop">Hover over</span>
+				<span class="mobile">Tap on</span>
+				the spoiler bar after each title to show unlock condition.
+				Unlock information from <a href="https://h1g.jp/tabikaeru/?%E7%A7%B0%E5%8F%B7">h1g.jp</a></p>
       <ul>
         <li>ひとりたび (hitori tabi) - Travelling Alone
           <ul class="unlock"><li>Go on your first trip</li></ul>

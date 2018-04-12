@@ -43,7 +43,7 @@ body {
   padding: 4em;
 }
 
-nav {
+.responsive-menu {
   width: 20%;
   height: 100%;
   text-align: center;
@@ -52,7 +52,7 @@ nav {
   left: 0;
   border-right: 1px;
   border-style: solid;
-  background-color: #eef;
+  background-color: #dfd;
   z-index: 100;
 }
 
@@ -71,8 +71,16 @@ a.unlock {
   color: inherit;
 }
 
-.main p {
+p.description {
   margin-bottom: 50px;
+}
+
+.main p {
+  margin-top: 8px;
+}
+
+.mobile {
+  display: none;
 }
 
 article {
@@ -86,34 +94,87 @@ article p {
 }
 
 @media only screen and (max-width: 688px) {
-    nav {
-      width: 120%;
-      height: 5%;
-      margin-left: -4em;
-      text-align: center;
-      position: fixed;
-      top: 0;
-      border-bottom: 1px;
-      border-style: solid;
-      background-color: #eef;
-      z-index: 100;
-    }
+  .nav {
+    position: fixed;
+    left: 0;
+    top: 95%;
+    width: 100%;
+    height: 10%;
+    border-top: 1px;
+    border-style: solid;
+    background-color: #dfd;
+    /* padding-right: 8px;
+    margin-top: -0.50em; */
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 100;
+  }
 
-    body {
-      padding: 3em;
-    }
+  .menu-btn {
+    margin-left: 48%
 
-    nav img {
-      display: none;
-    }
+    /* width: 30px; */
+  }
 
-    nav li {
-      display: inline;
-    }
+  .responsive-menu{
+    position: fixed;
+    top: 75%;
+    width: 100%;
+    max-height: 20%;
+    display: block;
+    text-align: center;
+    overflow: scroll;
+    border: 1px;
+    border-style: solid;
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+  }
 
-    article {
-      margin: 0;
-      margin-bottom: 10vh;
-      max-width: 100vh;
-    }
+  .responsive-menu li {
+    border-bottom: 1px;
+    padding: 5px;
+    border-style: solid;
+  }
+
+  .active {
+    background-color: #dfd;
+  }
+
+  .responsive-menu img {
+    display: none;
+  }
+
+  .expand {
+    display: block !important;
+  }
+
+  nav {
+
+  }
+
+  body {
+    padding: 3em;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  .main {
+    margin: 0;
+    padding: 30% 0;
+    margin-bottom: 10vh;
+    max-width: 100vh;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
 }

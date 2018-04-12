@@ -6,22 +6,34 @@
 		<link rel="stylesheet" href="../../css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="../css/styles.css" type="text/css" />
 
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  					integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  					crossorigin="anonymous"></script>
+
+		<script src="../js/nav.js" charset="utf-8"></script>
+
 		<title>Tabi Kaeru Translations</title>
 	</head>
 
 	<body>
-    <nav>
-      <img src="kaeru.gif" alt="Tabi Kaeru">
-      <ul>
-        <li>Contents</li>
-        <li><a href="changelog.html">Changelog</a></li>
-        <li><a href="titles.html">Titles</a></li>
-      </ul>
-    </nav>
+		<div class="nav">
+			<div class="mobile menu-btn">&#9776;</div>
+			<div class="responsive-menu">
+				<img src="kaeru.gif" alt="Tabi Kaeru">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="changelog.html">Changelog</a></li>
+					<li><a href="titles.html">Titles</a></li>
+					<li><a href="friends.html">Friends</a></li>
+					<li><a href="shop.html">Shop Items</a></li>
+				</ul>
+			</div>
+		</div>
+
 		<div class="main">
       <h2>Changelog</h2>
       <hr>
-      <p></p>
+      <p class="description"></p>
       <ul>
         <li>1.1.2 4/1/2018
           <ul><li>Fixed bugs</li></ul>
