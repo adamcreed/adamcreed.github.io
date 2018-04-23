@@ -9,6 +9,12 @@ h2 {
   margin-top: -20%;
 }
 
+h3 {
+  font-weight: bold;
+  text-align: left;
+  font-size: 125%;
+}
+
 .main {
   padding: 25%;
 }
@@ -56,9 +62,6 @@ body {
   z-index: 100;
 }
 
-nav li {
-}
-
 a {
   text-decoration: none;
 }
@@ -83,6 +86,10 @@ p.description {
   display: none;
 }
 
+hr {
+  margin-bottom: 20px;
+}
+
 article {
   margin: 50px;
   padding: 0.1em;
@@ -91,6 +98,21 @@ article {
 
 article p {
   margin-top: 50px;
+}
+
+.friend {
+  margin: 30px 0;
+}
+
+.reaction {
+  margin: 20px 0;
+}
+
+.icon {
+  width: 60px;
+  border-radius: 10%;
+  margin: 0 0 10px 10px;
+  box-shadow: 0 0 0 4px #edc674;
 }
 
 @media only screen and (max-width: 688px) {
@@ -103,8 +125,6 @@ article p {
     border-top: 1px;
     border-style: solid;
     background-color: #dfd;
-    /* padding-right: 8px;
-    margin-top: -0.50em; */
     line-height: 1.2;
     font-size: 18px;
     font-weight: 200;
@@ -114,8 +134,6 @@ article p {
 
   .menu-btn {
     margin-left: 48%
-
-    /* width: 30px; */
   }
 
   .responsive-menu{
@@ -149,10 +167,6 @@ article p {
 
   .expand {
     display: block !important;
-  }
-
-  nav {
-
   }
 
   body {
