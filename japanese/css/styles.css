@@ -41,7 +41,6 @@ h3 {
   color: #FFF !important;
 }
 
-
 body {
   font-family: Georgia, serif;
   text-align: left;
@@ -78,6 +77,11 @@ p.description {
   margin-bottom: 50px;
 }
 
+.spacing {
+  display: block;
+  margin: 20px;
+}
+
 .main p {
   margin-top: 8px;
 }
@@ -105,14 +109,32 @@ article p {
 }
 
 .reaction {
-  margin: 20px 0;
+  margin: 20px 0 50px 0;
+}
+
+.meibutsu {
+  margin-left: -30px;
 }
 
 .icon {
+  position: relative;
   width: 60px;
+  top: -30px;
+  left: 30px;
   border-radius: 10%;
-  margin: 0 0 10px 10px;
+  margin: 10px 0 0 10px;
   box-shadow: 0 0 0 4px #edc674;
+}
+
+.full {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-wrapper:hover .full img {
+  visibility: visible;
+  width: 225px;
 }
 
 @media only screen and (max-width: 688px) {
@@ -182,6 +204,10 @@ article p {
     padding: 30% 0;
     margin-bottom: 10vh;
     max-width: 100vh;
+  }
+
+  .full {
+    left: 0;
   }
 
   .desktop {
